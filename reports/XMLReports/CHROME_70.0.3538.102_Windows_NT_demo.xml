@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
+            failures="1"
             tests="1">
 
   <testsuite name="demo"
-    errors="0" failures="0" hostname="" id="" package="demo" skipped="0"
-    tests="1" time="5.466" timestamp="">
+    errors="0" failures="1" hostname="" id="" package="demo" skipped="0"
+    tests="1" time="5.428" timestamp="">
   
-    <testcase name="Demo test Google" classname="demo" time="5.466" assertions="5">
+    <testcase name="Demo test Google" classname="demo" time="5.428" assertions="2">
 
-    
+      <failure message="Testing if the page title equals &#34;Google&#34; in 1000 ms. - expected [0;32m&#34;Google&#34;[0m but got: [0;31m&#34;Facebook - Log In or Sign Up&#34;[0m">    at Object.Demo test Google (C:\Users\solra\Downloads\Homework\nightwatch\tests\demo.js:6:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
 
-    
-
-    
-
-    
-
-    
+    <failure message="    at Object.Demo test Google (C:\Users\solra\Downloads\Homework\nightwatch\tests\demo.js:6:15)">    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
     </testcase>
   
 
