@@ -1,5 +1,5 @@
 {
-  "name": "nightwatch",
+  "name": "nwtest",
   "version": "1.0.0",
   "description": "learn stuff",
   "main": "nightwatch.js",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/crazyceelo/nightwatch/issues"
   },
-  "homepage": "https://github.com/crazyceelo/nightwatch#readme"
+  "homepage": "https://github.com/crazyceelo/nightwatch#readme",
+  "dependencies": {
+    "nightwatch": "^0.9.21"
+  }
 }
