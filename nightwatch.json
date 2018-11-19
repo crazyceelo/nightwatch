@@ -25,8 +25,8 @@
       "selenium_host": "localhost",
       "silent": true,
       "screenshots": {
-        "enabled": false,
-        "path": "screenshots/Chrome/"
+        "enabled": true,
+        "path": "screenshots/chrome"
       },
       "desiredCapabilities": {
         "browserName": "chrome",

@@ -5,9 +5,9 @@
 
   <testsuite name="artsyJewels.testCase2"
     errors="0" failures="0" hostname="" id="" package="artsyJewels" skipped="0"
-    tests="1" time="12.79" timestamp="">
+    tests="1" time="10.43" timestamp="">
   
-    <testcase name="search functionality is working" classname="artsyJewels.testCase2" time="12.79" assertions="3">
+    <testcase name="search functionality is working" classname="artsyJewels.testCase2" time="10.43" assertions="3">
 
     
 

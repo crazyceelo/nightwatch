@@ -7,7 +7,8 @@ module.exports = {
       .waitForElementVisible('a[href*="/search"]', 1000)
       .click('a[href*="/search"]')
       .waitForElementVisible("[type=search]", 1000)
-      .setValue("[type=search]", ["silver bracelets", client.Keys.ENTER])
-      .end();
+      .setValue("[type=search]", ["silver bracelets", client.Keys.ENTER]);
+
+    client.saveScreenshot("./screenshots/chrome/testcase2.jpg").end();
   }
 };
