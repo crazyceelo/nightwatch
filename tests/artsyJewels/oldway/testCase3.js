@@ -1,4 +1,4 @@
-const credentials = require("../../config/credentials");
+const credentials = require("../../../config/credentials");
 
 module.exports = {
   "@tags": ["testcase3"],

@@ -1,7 +1,7 @@
-var utils = require("../../../pages/utils");
+const utils = require("../../../pages/utils");
 
 module.exports = {
-  "@tags": ["login"],
+  "@tags": ["addtocart"],
 
   before: function(client) {
     utils.openBrowser(client);
@@ -13,5 +13,9 @@ module.exports = {
 
   "Login with valid credentials": function(client) {
     utils.login(client);
+  },
+
+  "Add a product to cart": function(client) {
+    utils.addToCart(client);
   }
 };

@@ -3,11 +3,11 @@
             failures="0"
             tests="1">
 
-  <testsuite name="artsyJewels.testcases.login"
+  <testsuite name="artsyJewels.testcases.tryOnButton"
     errors="0" failures="0" hostname="" id="" package="testcases" skipped="0"
-    tests="1" time="4.937" timestamp="">
+    tests="1" time="5.456" timestamp="">
   
-    <testcase name="Login with valid credentials" classname="artsyJewels.testcases.login" time="4.937" assertions="3">
+    <testcase name="Click try on button" classname="artsyJewels.testcases.tryOnButton" time="5.456" assertions="3">
 
     
 
