@@ -1,7 +1,7 @@
 const utils = require("../../../pages/utils");
 
 module.exports = {
-  "@tags": ["tryonbutton"],
+  "@tags": ["tryonbutton", "artsy"],
 
   before: function(client) {
     utils.openLandingPage(client);

@@ -1,7 +1,7 @@
 var utils = require("../../../pages/utils");
 
 module.exports = {
-  "@tags": ["login"],
+  "@tags": ["login", "artsy"],
 
   before: function(client) {
     utils.openBrowser(client);

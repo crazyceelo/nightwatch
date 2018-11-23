@@ -1,7 +1,7 @@
 const utils = require("../../../pages/utils");
 
 module.exports = {
-  "@tags": ["addtocart"],
+  "@tags": ["addtocart", "artsy"],
 
   before: function(client) {
     utils.openBrowser(client);

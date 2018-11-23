@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
+            failures="1"
             tests="1">
 
   <testsuite name="artsyJewels.testcases.tryOnButton"
-    errors="0" failures="0" hostname="" id="" package="testcases" skipped="0"
-    tests="1" time="5.456" timestamp="">
+    errors="0" failures="1" hostname="" id="" package="testcases" skipped="0"
+    tests="1" time="7.087" timestamp="">
   
-    <testcase name="Click try on button" classname="artsyJewels.testcases.tryOnButton" time="5.456" assertions="3">
+    <testcase name="Click try on button" classname="artsyJewels.testcases.tryOnButton" time="7.087" assertions="3">
 
     
 
-    
+      <failure message="Testing if element &lt;header h1&gt; contains text: &#34;$50-$100&#34; in 1000 ms. - expected [0;32m&#34;$50-$100&#34;[0m but got: [0;31m&#34;2018 Black Friday Jewelry Sale&#34;[0m">    at Object.tryOnButton (C:\Users\solra\Downloads\Homework\nightwatch\pages\utils.js:53:15)
+    at Object.Click try on button (C:\Users\solra\Downloads\Homework\nightwatch\tests\artsyJewels\testcases\tryOnButton.js:15:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
 
-    
+    <failure message="    at Object.tryOnButton (C:\Users\solra\Downloads\Homework\nightwatch\pages\utils.js:53:15)">    at Object.Click try on button (C:\Users\solra\Downloads\Homework\nightwatch\tests\artsyJewels\testcases\tryOnButton.js:15:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
     </testcase>
   
 

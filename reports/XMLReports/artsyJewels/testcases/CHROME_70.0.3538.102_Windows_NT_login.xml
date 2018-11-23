@@ -5,9 +5,9 @@
 
   <testsuite name="artsyJewels.testcases.login"
     errors="0" failures="0" hostname="" id="" package="testcases" skipped="0"
-    tests="1" time="4.937" timestamp="">
+    tests="1" time="3.743" timestamp="">
   
-    <testcase name="Login with valid credentials" classname="artsyJewels.testcases.login" time="4.937" assertions="3">
+    <testcase name="Login with valid credentials" classname="artsyJewels.testcases.login" time="3.743" assertions="3">
 
     
 

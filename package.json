@@ -19,6 +19,7 @@
   "dependencies": {
     "growl": "^1.10.5",
     "http-proxy-agent": "^2.1.0",
-    "nightwatch": "^1.0.14"
+    "nightwatch": "^1.0.14",
+    "nightwatch-html-reporter": "^2.0.6"
   }
 }

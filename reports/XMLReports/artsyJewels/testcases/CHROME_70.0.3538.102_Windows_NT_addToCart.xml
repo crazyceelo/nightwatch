@@ -5,9 +5,9 @@
 
   <testsuite name="artsyJewels.testcases.addToCart"
     errors="0" failures="0" hostname="" id="" package="testcases" skipped="0"
-    tests="2" time="19.70" timestamp="">
+    tests="2" time="21.19" timestamp="">
   
-    <testcase name="Login with valid credentials" classname="artsyJewels.testcases.addToCart" time="3.996" assertions="3">
+    <testcase name="Login with valid credentials" classname="artsyJewels.testcases.addToCart" time="3.250" assertions="3">
 
     
 
@@ -16,7 +16,7 @@
     
     </testcase>
   
-    <testcase name="Add a product to cart" classname="artsyJewels.testcases.addToCart" time="15.70" assertions="6">
+    <testcase name="Add a product to cart" classname="artsyJewels.testcases.addToCart" time="17.94" assertions="6">
 
     
 
