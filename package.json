@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/crazyceelo/nightwatch#readme",
   "dependencies": {
+    "fs": "0.0.1-security",
     "growl": "^1.10.5",
+    "handlebars": "^4.0.12",
     "http-proxy-agent": "^2.1.0",
     "nightwatch": "^1.0.14",
-    "nightwatch-html-reporter": "^2.0.6"
+    "nightwatch-html-reporter": "^2.0.6",
+    "path": "^0.12.7"
   }
 }
