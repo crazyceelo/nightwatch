@@ -1,4 +1,6 @@
-var utils = require("../../../pages/utils");
+const credentials = require("../../../config/credentials");
+var utils = require("../../../pages/common/utils");
+const loginPage = require("../../../pages/artsyjewels/loginPage");
 
 module.exports = {
   "@tags": ["login", "artsy"],
@@ -11,7 +13,11 @@ module.exports = {
     utils.closeBrowser(client);
   },
 
+  "Navigate to the login page": function(client) {
+    loginPage.goToLoginPage(client);
+  },
+
   "Login with valid credentials": function(client) {
-    utils.login(client);
+    loginPage.login(client, credentials.email, credentials.password);
   }
 };

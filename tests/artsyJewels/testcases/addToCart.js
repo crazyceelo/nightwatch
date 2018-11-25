@@ -1,4 +1,5 @@
-const utils = require("../../../pages/utils");
+const utils = require("../../../pages/common/utils");
+const loginPage = require("../../../pages/artsyjewels/loginPage");
 
 module.exports = {
   "@tags": ["addtocart", "artsy"],
@@ -11,11 +12,13 @@ module.exports = {
     utils.closeBrowser(client);
   },
 
-  "Login with valid credentials": function(client) {
-    utils.login(client);
+  "Navigate to login page": function(client) {
+    loginPage.goToLoginPage(client);
   },
 
-  "Add a product to cart": function(client) {
-    utils.addToCart(client);
+  "Login with valid credentials": function(client) {
+    loginPage.login(client);
   }
+
+  // add product to cart steps here
 };

@@ -1,32 +1,20 @@
-const credentials = require("../config/credentials");
+const credentials = require("../../config/credentials");
 
 module.exports = {
-  openBrowser: function(client) {
+  goToLoginPage: function(client) {
     client
-      .windowMaximize()
       .url("https://www.artsyjewels.com/account/login")
       .waitForElementVisible("body", 3000);
   },
 
-  openLandingPage: function(client) {
-    client
-      .windowMaximize()
-      .url("https://www.artsyjewels.com")
-      .waitForElementVisible("body", 3000);
-  },
-
-  login: function(client) {
+  login: function(client, email, password) {
     client
       .waitForElementVisible("#CustomerEmail", 1000)
-      .setValue("#CustomerEmail", credentials.email)
+      .setValue("#CustomerEmail", email)
       .waitForElementVisible("#CustomerPassword", 1000)
-      .setValue("#CustomerPassword", credentials.password)
+      .setValue("#CustomerPassword", password)
       .waitForElementVisible('[value="Sign In"]', 1000)
       .click('[value="Sign In"]');
-  },
-
-  closeBrowser: function(client) {
-    client.end();
   },
 
   addToCart: function(client) {
@@ -42,15 +30,6 @@ module.exports = {
       .waitForElementVisible("#AddToCart--product-template", 1000)
       .click("#AddToCart--product-template")
       .pause(5000)
-      .end();
-  },
-
-  tryOnButton: function(client) {
-    client
-      .waitForElementVisible(".hero__cta", 1000)
-      .click(".hero__cta")
-      .waitForElementVisible("header h1", 1000)
-      .assert.containsText("header h1", "$50-$100")
       .end();
   }
 };
