@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="artsyJewels.testcases.addToCart"
+    errors="0" failures="0" hostname="" id="" package="testcases" skipped="0"
+    tests="4" time="14.14" timestamp="">
+  
+    <testcase name="Navigate to login page" classname="artsyJewels.testcases.addToCart" time="2.636" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Login with valid credentials" classname="artsyJewels.testcases.addToCart" time="3.804" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="add to cart" classname="artsyJewels.testcases.addToCart" time="7.079" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Cart contains product" classname="artsyJewels.testcases.addToCart" time="0.6200" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
