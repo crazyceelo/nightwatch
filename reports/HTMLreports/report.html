@@ -120,45 +120,59 @@ $(document).ready(function() {
   <body>
     <h1>Nightwatch Results</h1>
     <div id="container"><a class="toggleSuccess" href="#">Show/Hide Successes</a>
-      <div class="package error">
-        <h2 class="name">&#10005; artsyJewels\functions\addToCart</h2>
+      <div class="package success">
+        <h2 class="name">&#10003; evisions\navigation\argosPageLoads</h2>
         <div class="suites">
           <div class="suite success">
-            <h3 class="name">Navigate to login page</h3>
+            <h3 class="name">Landing page loads</h3>
             <ul class="testcases">
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;body&gt; was visible after 2957 milliseconds.</div>
+                <div class="name">Element &lt;body&gt; was visible after 197 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Expected element &lt;{&quot;selector&quot;:&quot;#et-boc h1&quot;}&gt; text to equal: &quot;Higher Education Software Solutions&quot; - condition was met in 227ms</div>
               </li>
             </ul>
           </div>
           <div class="suite success">
-            <h3 class="name">Login with valid credentials</h3>
+            <h3 class="name">Argos page loads</h3>
             <ul class="testcases">
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;#CustomerEmail&gt; was visible after 338 milliseconds.</div>
+                <div class="name">Element &lt;#menu-item-3551&gt; was visible after 144 milliseconds.</div>
               </li>
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;#CustomerPassword&gt; was visible after 37 milliseconds.</div>
+                <div class="name">Element &lt;[title=&quot;Argos: Enterprise Reporting&quot;]:nth-child(1)&gt; was visible after 96 milliseconds.</div>
               </li>
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;[value=&quot;Sign In&quot;]&gt; was visible after 42 milliseconds.</div>
+                <div class="name">Testing if the page title equals &quot;Enterprise Reporting for Higher Education | Evisions&quot;  - 103 ms.</div>
               </li>
             </ul>
           </div>
-          <div class="suite error">
-            <h3 class="name">add to cart</h3>
+        </div>
+      </div>
+      <div class="package success">
+        <h2 class="name">&#10003; evisions\navigation\landingPageLoads</h2>
+        <div class="suites">
+          <div class="suite success">
+            <h3 class="name">Go to landing page</h3>
             <ul class="testcases">
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;body&gt; was visible after 558 milliseconds.</div>
+                <div class="name">Element &lt;body&gt; was visible after 239 milliseconds.</div>
               </li>
-              <li class="testcase error">
-                <div class="status">&#10005;</div>
-                <div class="name">Testing if the page title equals &quot;Account – Artsyjewels&quot; in 1000 ms. - expected [0;32m&quot;Account – Artsyjewels&quot;[0m but got: [0;31m&quot;Challenge – Artsyjewels&quot;[0m Expected &quot;Account – Artsyjewels&quot; but got: &quot;Challenge – Artsyjewels&quot;</div>
+            </ul>
+          </div>
+          <div class="suite success">
+            <h3 class="name">Landing page loads</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Expected element &lt;{&quot;selector&quot;:&quot;#et-boc h1&quot;}&gt; text to equal: &quot;Higher Education Software Solutions&quot; - condition was met in 203ms</div>
               </li>
             </ul>
           </div>

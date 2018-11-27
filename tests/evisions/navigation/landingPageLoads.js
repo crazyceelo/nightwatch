@@ -1,15 +1,20 @@
 "use strict";
 const landingPage = require("../../../pages/evisions/landingPage");
+const utils = require("../../../pages/common/utils");
 
 module.exports = {
   "@tags": ["navigation", "evisions", "all"],
 
-  before: async client => {
-    await landingPage.goToLandingPage(client);
+  before: function(client) {
+    utils.openBrowser(client);
   },
 
-  after: async client => {
-    await landingPage.goToLandingPage(client);
+  after: function(client) {
+    utils.closeBrowser(client);
+  },
+
+  "Go to landing page": function(client) {
+    landingPage.goToLandingPage(client);
   },
 
   "Landing page loads": function(client) {

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="evisions.navigation.argosPageLoads"
+    errors="0" failures="0" hostname="" id="" package="navigation" skipped="0"
+    tests="2" time="7.831" timestamp="">
+  
+    <testcase name="Landing page loads" classname="evisions.navigation.argosPageLoads" time="5.290" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Argos page loads" classname="evisions.navigation.argosPageLoads" time="2.541" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
