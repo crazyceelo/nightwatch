@@ -1,7 +1,9 @@
 "use strict";
 
 module.exports = {
-  argosPageLoads: function(client) {
-    client.assert.title("Enterprise Reporting for Higher Education | Evisions");
+  argosPageLoads: async client => {
+    await client.assert.title(
+      "Enterprise Reporting for Higher Education | Evisions"
+    );
   }
 };

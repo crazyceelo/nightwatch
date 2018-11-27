@@ -1,9 +1,9 @@
 module.exports = {
-  openBrowser: function(client) {
-    client.windowMaximize();
+  openBrowser: async client => {
+    await client.windowMaximize();
   },
 
-  closeBrowser: function(client) {
-    client.end();
+  closeBrowser: async client => {
+    await client.end();
   }
 };

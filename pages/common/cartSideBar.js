@@ -1,10 +1,12 @@
 module.exports = {
-  cartContainsProduct: function(client) {
-    client
-      .waitForElementVisible(
-        "#CartContainer .ajaxcart__product:nth-child(1)",
-        1000
-      )
-      .assert.visible("#CartContainer .ajaxcart__product:nth-child(1)");
+  cartContainsProduct: async client => {
+    await client.waitForElementVisible("#CartDrawer", 3000);
+    await client.waitForElementVisible(
+      "#CartContainer > form > div.ajaxcart__inner.ajaxcart__inner--has-fixed-footer > div.ajaxcart__product",
+      5000
+    );
+    await client.assert.visible(
+      "#CartContainer > form > div.ajaxcart__inner.ajaxcart__inner--has-fixed-footer > div.ajaxcart__product"
+    );
   }
 };

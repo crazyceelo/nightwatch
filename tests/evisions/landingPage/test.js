@@ -3,18 +3,18 @@ const landingPage = require("../../../pages/evisions/landingPage");
 const argosPage = require("../../../pages/evisions/argosPage");
 
 module.exports = {
-  "@tags": ["navigation", "argos"],
+  "@tags": ["evisions", "argos"],
 
-  before: function(client) {
-    landingPage.goToLandingPage(client);
+  before: async client => {
+    await landingPage.goToLandingPage(client);
   },
 
-  after: function(client) {
-    landingPage.goToLandingPage(client);
+  after: async client => {
+    await landingPage.goToLandingPage(client);
   },
 
-  "Argos page loads": function(client) {
-    landingPage.clickOnArgos(client);
-    argosPage.argosPageLoads(client);
+  "Argos page loads": async client => {
+    await landingPage.clickOnArgos(client);
+    await argosPage.argosPageLoads(client);
   }
 };

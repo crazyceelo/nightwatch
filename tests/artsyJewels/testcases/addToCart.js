@@ -7,27 +7,27 @@ const cartSideBar = require("../../../pages/common/cartSideBar");
 module.exports = {
   "@tags": ["addtocart", "artsy"],
 
-  before: function(client) {
-    utils.openBrowser(client);
+  before: async client => {
+    await utils.openBrowser(client);
   },
 
-  after: function(client) {
-    utils.closeBrowser(client);
+  after: async client => {
+    await utils.closeBrowser(client);
   },
 
-  "Navigate to login page": function(client) {
-    loginPage.goToLoginPage(client);
+  "Navigate to login page": async client => {
+    await loginPage.goToLoginPage(client);
   },
 
-  "Login with valid credentials": function(client) {
-    loginPage.login(client, credentials.email, credentials.password);
+  "Login with valid credentials": async client => {
+    await loginPage.login(client, credentials.email, credentials.password);
   },
 
-  "add to cart": function(client) {
-    leftSideBar.addToCart(client);
+  "add to cart": async client => {
+    await leftSideBar.addToCart(client);
   },
 
-  "Cart contains product": function(client) {
-    cartSideBar.cartContainsProduct(client);
+  "Cart contains product": async client => {
+    await cartSideBar.cartContainsProduct(client);
   }
 };
