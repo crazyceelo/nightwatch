@@ -5,14 +5,14 @@
 
   <testsuite name="evisions.navigation.landingPageLoads"
     errors="0" failures="0" hostname="" id="" package="navigation" skipped="0"
-    tests="2" time="5.690" timestamp="">
+    tests="2" time="5.823" timestamp="">
   
-    <testcase name="Go to landing page" classname="evisions.navigation.landingPageLoads" time="5.479" assertions="1">
+    <testcase name="Go to landing page" classname="evisions.navigation.landingPageLoads" time="5.559" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Landing page loads" classname="evisions.navigation.landingPageLoads" time="0.2110" assertions="1">
+    <testcase name="Landing page loads" classname="evisions.navigation.landingPageLoads" time="0.2640" assertions="1">
 
     
     </testcase>
