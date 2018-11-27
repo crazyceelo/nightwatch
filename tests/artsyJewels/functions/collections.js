@@ -3,7 +3,7 @@ const landingPage = require("../../../pages/artsyjewels/landingPage");
 const collectionsPage = require("../../../pages/artsyjewels/collectionsPage");
 
 module.exports = {
-  "@tags": ["collections", "artsy"],
+  "@tags": ["collections", "artsy", "all"],
 
   before: async client => {
     await utils.openBrowser(client);
@@ -17,11 +17,11 @@ module.exports = {
     await landingPage.goToLandingPage(client);
   },
 
-  "Click buy now button": async client => {
-    await landingPage.clickBuyNowButton(client);
+  "Click buy now button": function(client) {
+    landingPage.clickBuyNowButton(client);
   },
 
-  "Collections page loads": async client => {
-    await collectionsPage.collectionsPageLoads(client);
+  "Collections page loads": function(client) {
+    collectionsPage.collectionsPageLoads(client);
   }
 };

@@ -3,7 +3,7 @@ var utils = require("../../../pages/common/utils");
 const loginPage = require("../../../pages/artsyjewels/loginPage");
 
 module.exports = {
-  "@tags": ["login", "artsy"],
+  "@tags": ["login", "artsy", "all"],
 
   before: async client => {
     await utils.openBrowser(client);

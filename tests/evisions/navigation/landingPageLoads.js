@@ -2,7 +2,7 @@
 const landingPage = require("../../../pages/evisions/landingPage");
 
 module.exports = {
-  "@tags": ["navigation", "evisions"],
+  "@tags": ["navigation", "evisions", "all"],
 
   before: async client => {
     await landingPage.goToLandingPage(client);

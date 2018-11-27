@@ -5,7 +5,7 @@ const leftSideBar = require("../../../pages/common/leftSideBar");
 const cartSideBar = require("../../../pages/common/cartSideBar");
 
 module.exports = {
-  "@tags": ["addtocart", "artsy"],
+  "@tags": ["addtocart", "artsy", "all"],
 
   before: async client => {
     await utils.openBrowser(client);

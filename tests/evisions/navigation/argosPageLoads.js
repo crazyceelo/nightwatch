@@ -3,7 +3,7 @@ const landingPage = require("../../../pages/evisions/landingPage");
 const argosPage = require("../../../pages/evisions/argosPage");
 
 module.exports = {
-  "@tags": ["evisions", "argos"],
+  "@tags": ["evisions", "argos", "all"],
 
   before: async client => {
     await landingPage.goToLandingPage(client);
