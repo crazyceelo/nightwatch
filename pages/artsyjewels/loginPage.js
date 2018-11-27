@@ -1,9 +1,10 @@
 const credentials = require("../../config/credentials");
 
 module.exports = {
-  goToLoginPage: async client => {
-    await client.url("https://www.artsyjewels.com/account/login");
-    await client.waitForElementVisible("body", 3000);
+  goToLoginPage: function(client) {
+    client
+      .url("https://www.artsyjewels.com/account/login")
+      .waitForElementVisible("body", 3000);
   },
 
   login: function(client, email, password) {
