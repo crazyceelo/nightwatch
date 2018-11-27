@@ -13,8 +13,8 @@ module.exports = {
     await utils.closeBrowser(client);
   },
 
-  "Navigate to landing page": async client => {
-    await landingPage.goToLandingPage(client);
+  "Navigate to landing page": function(client) {
+    landingPage.goToLandingPage(client);
   },
 
   "Click buy now button": function(client) {

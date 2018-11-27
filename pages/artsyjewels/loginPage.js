@@ -6,12 +6,13 @@ module.exports = {
     await client.waitForElementVisible("body", 3000);
   },
 
-  login: async (client, email, password) => {
-    await client.waitForElementVisible("#CustomerEmail", 1000);
-    await client.setValue("#CustomerEmail", email);
-    await client.waitForElementVisible("#CustomerPassword", 1000);
-    await client.setValue("#CustomerPassword", password);
-    await client.waitForElementVisible('[value="Sign In"]', 1000);
-    await client.click('[value="Sign In"]');
+  login: function(client, email, password) {
+    client
+      .waitForElementVisible("#CustomerEmail", 5000)
+      .setValue("#CustomerEmail", email)
+      .waitForElementVisible("#CustomerPassword", 5000)
+      .setValue("#CustomerPassword", password)
+      .waitForElementVisible('[value="Sign In"]', 5000)
+      .click('[value="Sign In"]');
   }
 };

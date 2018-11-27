@@ -5,19 +5,19 @@ const loginPage = require("../../../pages/artsyjewels/loginPage");
 module.exports = {
   "@tags": ["login", "artsy", "all"],
 
-  before: async client => {
-    await utils.openBrowser(client);
+  before: function(client) {
+    utils.openBrowser(client);
   },
 
-  after: async client => {
-    await utils.closeBrowser(client);
+  after: function(client) {
+    utils.closeBrowser(client);
   },
 
-  "Navigate to the login page": async client => {
-    await loginPage.goToLoginPage(client);
+  "Navigate to the login page": function(client) {
+    loginPage.goToLoginPage(client);
   },
 
-  "Login with valid credentials": async client => {
-    await loginPage.login(client, credentials.email, credentials.password);
+  "Login with valid credentials": function(client) {
+    loginPage.login(client, credentials.email, credentials.password);
   }
 };

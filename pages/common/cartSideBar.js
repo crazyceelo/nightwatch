@@ -1,7 +1,10 @@
 module.exports = {
   cartContainsProduct: function(client) {
+    // if (client.options.desiredCapabilities.browserName) {
+    //   client.waitForElementVisible();
+    // }
     client
-      .waitForElementVisible("#CartDrawer", 3000)
+      .waitForElementVisible("#CartDrawer", 10000)
       .waitForElementVisible(
         "#CartContainer > form > div.ajaxcart__inner.ajaxcart__inner--has-fixed-footer > div.ajaxcart__product",
         5000
