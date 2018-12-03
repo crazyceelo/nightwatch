@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="2">
+
+  <testsuite name="evisions.navigation.argosPageLoads"
+    errors="0" failures="1" hostname="" id="" package="navigation" skipped="0"
+    tests="2" time="18.52" timestamp="">
+  
+    <testcase name="Landing page loads" classname="evisions.navigation.argosPageLoads" time="15.43" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Argos page loads" classname="evisions.navigation.argosPageLoads" time="3.088" assertions="3">
+
+    
+
+      <failure message="Testing if the page title equals &#34;Enterprise Reporting for Higher Education | Evisions&#34; in 1000 ms. - expected [0;32m&#34;Enterprise Reporting for Higher Education | Evisions&#34;[0m but got: [0;31m&#34;&#34;[0m">    at Object.argosPageLoads (C:\Users\solra\Downloads\Homework\nightwatch\pages\evisions\argosPage.js:5:25)
+    at Object.Argos page loads (C:\Users\solra\Downloads\Homework\nightwatch\tests\evisions\navigation\argosPageLoads.js:24:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+
+    <failure message="    at Object.argosPageLoads (C:\Users\solra\Downloads\Homework\nightwatch\pages\evisions\argosPage.js:5:25)">    at Object.Argos page loads (C:\Users\solra\Downloads\Homework\nightwatch\tests\evisions\navigation\argosPageLoads.js:24:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
